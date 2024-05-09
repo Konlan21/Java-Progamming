@@ -8,7 +8,7 @@ public class Employee {
         setBaseSalary(baseSalary);
         setHourlyRate(hourlyRate);
     }
-
+ 
     public double calculateWage(int baseSalary, float hourlyRate, float extraHours) {
         return baseSalary + (hourlyRate * extraHours);
     }
