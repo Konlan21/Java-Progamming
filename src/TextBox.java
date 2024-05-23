@@ -2,8 +2,8 @@
 public class TextBox extends UIControl {
     public String text = " ";
 
-    public TextBox(boolean isEnabled) {
-        super(isEnabled);
+    public TextBox() {
+        // super(isEnabled);
         System.out.println("Textbox");
     }
 
@@ -11,6 +11,11 @@ public class TextBox extends UIControl {
     // public void enable() {
     //     System.out.println("Enabled");
     // }
+
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
+    }
 
     public void  setText(String text) {
         this.text = text;

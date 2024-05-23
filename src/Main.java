@@ -1,14 +1,18 @@
-import javafx.scene.text.Text;
 
 public class Main {
     public static void main(String[] args) {
-        TextBox textBox = new TextBox(false);
+        //  Cirlce
+        Circle circle = new Circle(7);
+        double circleArea = circle.area();
+        System.out.println(circleArea);
+        circle.display();
 
-        Point point1 = new Point(1, 2);
-        Point point2 = new Point(1, 2);
+        // Rectangle
 
-        System.out.println(point1.equals(point2));
-
-}
+        Rectangle rectangle = new Rectangle(20, 40.5);
+        double rectangleArea = rectangle.area();
+        System.out.println(rectangleArea);
+        rectangle.display();
+    }
 
 }
