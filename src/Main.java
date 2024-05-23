@@ -1,17 +1,14 @@
+import javafx.scene.text.Text;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Animal("Horse", 5);
-        Dog dog = new Dog("Golden retriever",  "Milpert", 2);
-        showAnimal(dog);
+        TextBox textBox = new TextBox(false);
+
+        Point point1 = new Point(1, 2);
+        Point point2 = new Point(1, 2);
+
+        System.out.println(point1.equals(point2));
 
 }
-
-    public static void showAnimal(Animal animal) {
-        if(animal instanceof Dog){
-            Dog dog = (Dog)animal;
-            dog.giveBirth();
-        }
-    }
 
 }
