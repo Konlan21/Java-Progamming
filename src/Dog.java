@@ -1,13 +1,13 @@
-public class Dog extends Animal {
-  public String breed;
 
-  public Dog(String breed, String name, int age) {
-    super(name, age);
-    this.breed = breed;
-  }
+public class Dog implements Animal {
 
-  
-  public void bark() {
-    System.out.println("Barking");
+  @Override
+  public void eat(){
+    System.out.println("Dog eat");
+  } 
+
+  @Override
+  public void sleep(){
+    System.out.println("Dog sleeps");
   }
 }
