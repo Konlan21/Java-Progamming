@@ -1,13 +1,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        dog.eat();
-        dog.sleep();
+        Engine engine = new Engine();
+        Car car = new Car(engine);
 
-        Cat cat = new Cat();
-        cat.eat();
-        cat.sleep();
-    }
+        car.startCar();
+    }   
 
 }

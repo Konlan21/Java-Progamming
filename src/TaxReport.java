@@ -1,8 +1,8 @@
 public class TaxReport {
     private TaxCalculator calculator;
 
-    public TaxReport() {
-        calculator = new TaxCalculator(100_000);
+    public TaxReport(TaxCalculator calculator) {
+        this.calculator = calculator;
     }
 
     public void show() {
