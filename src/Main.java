@@ -1,10 +1,12 @@
 
 public class Main {
     public static void main(String[] args) {
-        Engine engine = new Engine();
-        Car car = new Car(engine);
-
+        ElectricEngine electricEngine = new ElectricEngine();
+        GasEngine gasEngine =  new GasEngine();
+        Car car = new Car();
+        car.setEngine(gasEngine);
         car.startCar();
+        
     }   
 
 }
