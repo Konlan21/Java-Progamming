@@ -1,15 +1,14 @@
+import exceptions.Account;
+import exceptions.ExceptionsDemo;
 
 public class Main {
     public static void main(String[] args) {
-        // ElectricEngine electricEngine = new ElectricEngine();
-        // GasEngine gasEngine =  new GasEngine();
-        // Car car = new Car();
-        // car.setEngine(gasEngine);
-        // car.startCar();
+       ExceptionsDemo.show();
 
-        GreetingService greetingService = new GreetingService();
-        greetingService.sayHello("Hello World");
-        
-    }   
+       Account account = new Account();
+       account.deposite(0.00);
+    } 
+
+
 
 }
